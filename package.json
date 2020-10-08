@@ -1,0 +1,47 @@
+{
+  "name": "icoGenerator",
+  "version": "1.0.0",
+  "description": "electron icon genarator",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder --linux"
+  },
+  "author": "than <thancoder2019@gmail.com>",
+  "homepage": "./",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "electron": "^7.2.4",
+    "electron-builder": "^22.8.1"
+  },
+  "build": {
+    "linux": {
+      "category": "Graphics",
+      "icon": "./icons",
+      "target": [
+        {
+          "target": "appImage",
+          "arch": [
+            "x64",
+            "ia32"
+          ]
+        },
+        {
+          "target": "deb",
+          "arch": [
+            "x64",
+            "ia32"
+          ]
+        },
+        {
+          "target": "apk",
+          "arch": [
+            "x64",
+            "ia32"
+          ]
+        }
+      ]
+    }
+  }
+}

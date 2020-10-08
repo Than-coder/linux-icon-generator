@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="index.css" />
+    <title></title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- left -->
+      <div class="left">
+        <!-- input -->
+        <div>
+          <input id="file-input" type="file" />
+        </div>
+        <h4>Drop Image File Here...</h4>
+        <!-- show current img -->
+        <div class="original-img">
+          <img src="../icon.png" alt="original-img" />
+        </div>
+      </div>
+      <!-- right -->
+      <div class="right">
+        <!-- select  -->
+        <div>
+          <h4>Select Generate</h4>
+          <select id="select-icon">
+            <option value="linux">Linux</option>
+          </select>
+        </div>
+        <!-- show list -->
+        <div>
+          <h4>Generate Icon List</h4>
+          <ul class="generate-list">
+            <li>16x16</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- generate button -->
+    <div class="gen-button">
+      <button class="gen-btn">Generate Icon</button>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
